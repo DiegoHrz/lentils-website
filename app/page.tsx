@@ -1,12 +1,54 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='m-0'>
-        <img src="./lentils.webp" alt="lentils" className='w-full' />
+      <div className="-mt-24 w-screen">
+        <img src="./lentils.webp" alt="lentils" className="w-screen" />
+      </div>
+      <div className="w-screen">
+        <h1 className="text-2xl">Nuestra Marca</h1>
+        <div className="flex justify-between ">
+          <div className="w-1/2">
+            imagen
+            <img src="" alt="" />
+          </div>
+          <div className="flex flex-col w-1/2">
+            <div>e</div>
+            <div>
+              Bienvenido a Lentejas Sol del Norte, tu proveedor de confianza
+              para las lentejas más frescas y sabrosas. Nuestra dedicación a la
+              calidad y autenticidad nos convierte en la elección perfecta para
+              los amantes de la buena comida. Descubre la diferencia con Sol del
+              Norte.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-screen">
+        <h2>Calidad / Certificados del producto o marca</h2>
+        <div>En Sol del Norte, nos comprometemos a ofrecer lentejas de la más alta calidad. Cada lenteja que llega a tu mesa ha pasado por rigurosos controles de calidad y está respaldada por certificaciones que garantizan su pureza y frescura. Cuidamos cada detalle, desde el campo hasta tu plato.</div>
+      </div>
+      <div className="w-screen bg-white">
+        <h2 className="text-gray-700">Nutricion</h2>
+        <div>
+          <img src="./lentils-benefits.png" alt="" />
+        </div>
+        <div className="text-gray-700">
+        Descubre los beneficios nutricionales de nuestras lentejas. Rica en proteínas, fibra y nutrientes esenciales, cada lenteja de Sol del Norte es una fuente natural de salud y bienestar. Incorpora nuestras lentejas a tu dieta y disfruta de una nutrición excepcional.
+        </div>
+      </div>
+      <div className="w-screen">
+        <h2>Solicita tu cotizacion</h2>
+        <div>¿Listo para llevar las lentejas de Sol del Norte a tu negocio? Solicita tu cotización hoy mismo. Nos enorgullece ofrecer precios competitivos sin comprometer la calidad. Completa el formulario y descubre cómo podemos ser tu proveedor de confianza.</div>
       </div>
 
+      <div className="w-screen">
+        <h2>Contactanos</h2>
+        <div>¿Tienes preguntas o comentarios? Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo amigable y profesional. Ya sea que necesites más información sobre nuestros productos o desees discutir una colaboración, estamos listos para escucharte.</div>
+        <button className="border"><Link href='/contacto'>Contacta ya!</Link></button>
+      </div>
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
@@ -27,7 +69,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
+            Docs{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -44,7 +86,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
+            Learn{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -61,7 +103,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
+            Templates{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -78,7 +120,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            Deploy{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -89,5 +131,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
