@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
+  //   e.preventDefault()
+  // }
+
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="-mt-24 w-screen">
@@ -28,26 +33,98 @@ export default function Home() {
       </div>
       <div className="w-screen">
         <h2>Calidad / Certificados del producto o marca</h2>
-        <div>En Sol del Norte, nos comprometemos a ofrecer lentejas de la más alta calidad. Cada lenteja que llega a tu mesa ha pasado por rigurosos controles de calidad y está respaldada por certificaciones que garantizan su pureza y frescura. Cuidamos cada detalle, desde el campo hasta tu plato.</div>
+        <div>
+          En Sol del Norte, nos comprometemos a ofrecer lentejas de la más alta
+          calidad. Cada lenteja que llega a tu mesa ha pasado por rigurosos
+          controles de calidad y está respaldada por certificaciones que
+          garantizan su pureza y frescura. Cuidamos cada detalle, desde el campo
+          hasta tu plato.
+        </div>
       </div>
       <div className="w-screen bg-white">
-        <h2 className="text-gray-700">Nutricion</h2>
-        <div>
-          <img src="./lentils-benefits.png" alt="" />
-        </div>
-        <div className="text-gray-700">
-        Descubre los beneficios nutricionales de nuestras lentejas. Rica en proteínas, fibra y nutrientes esenciales, cada lenteja de Sol del Norte es una fuente natural de salud y bienestar. Incorpora nuestras lentejas a tu dieta y disfruta de una nutrición excepcional.
+        <div className="flex flex-row-reverse justify-center items-center">
+          <div className="w-1/2">
+            <img src="./lentils-benefits.png" alt="" />
+          </div>
+          <div className="text-gray-700 w-1/2 border flex justify-center">
+            <div className="w-2/3 border">
+              <h1 className="text-gray-700 text-5xl font-medium border">
+                Nutricion
+              </h1>
+              <p className="pt-3 text-xl font-normal">
+                Descubre los beneficios nutricionales de nuestras lentejas:
+                ricas en proteínas, fibra y nutrientes esenciales. ¡Bienestar
+                natural con Sol del Norte!
+              </p>
+              <br />
+              <p>Conoce como prepararlas:</p>
+              <p>
+                <Link href="/recetas" className="text-sky-600 hover:underline">
+                  Recetas y Cocina ➤
+                </Link>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="w-screen">
-        <h2>Solicita tu cotizacion</h2>
-        <div>¿Listo para llevar las lentejas de Sol del Norte a tu negocio? Solicita tu cotización hoy mismo. Nos enorgullece ofrecer precios competitivos sin comprometer la calidad. Completa el formulario y descubre cómo podemos ser tu proveedor de confianza.</div>
+
+      <div className="w-screen bg-gray-50 flex h-80 border-red-700 border h">
+        <div className="flex w-2/5 justify-center h-3/4">
+          <div className="flex justify-center h-full border ">
+            <img src="/credit-card.png" alt="" />
+          </div>
+          </div>
+          <div className="border flex flex-col justify-center text-center w-2/3">
+            <div className="text-gray-950">
+              <h2 className="text-gray-700 text-4xl font-medium border flex justify-center">
+                Solicita tu cotizacion
+              </h2>
+            </div>
+            <div className="text-gray-950 pt-3">
+              <p>
+                ¡Solicita tu cotización hoy! Descubre precios competitivos para
+                las lentejas de Sol del Norte. Completa el formulario y conoce
+                cómo ser tu proveedor de confianza.
+              </p>
+            </div>
+            <div className="flex justify-between items-center border">
+              <form action="" className="text-gray-900 pt-8">
+                <div className="flex ">
+                  <div className="w-1/4 border">
+                    <label htmlFor="">Nombre</label>
+                    <input type="text" name="" id="" />
+                  </div>
+                  <div className="w-1/4">
+                    <label htmlFor="">Empresa</label>
+                    <input type="text" name="" id="" />
+                  </div>
+                  <div className="w-1/4">
+                    <label htmlFor="">Correo</label>
+                    <input type="text" name="" id="" />
+                  </div>
+                  <div className="w-1/4">
+                    <label htmlFor="">Cantidad de Toneladas</label>
+                    <input type="text" name="" id="" />
+                  </div>
+                </div>
+                <button className="w-1/4 border bg-cyan-700 mt-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        <div></div>
       </div>
 
       <div className="w-screen">
         <h2>Contactanos</h2>
-        <div>¿Tienes preguntas o comentarios? Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo amigable y profesional. Ya sea que necesites más información sobre nuestros productos o desees discutir una colaboración, estamos listos para escucharte.</div>
-        <button className="border"><Link href='/contacto'>Contacta ya!</Link></button>
+        <div>
+          ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte. Ponte en
+          contacto con nuestro equipo amigable y profesional. Ya sea que
+          necesites más información sobre nuestros productos o desees discutir
+          una colaboración, estamos listos para escucharte.
+        </div>
+        <button className="border">
+          <Link href="/contacto">Contacta ya!</Link>
+        </button>
       </div>
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
