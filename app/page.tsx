@@ -157,7 +157,7 @@ export default function Home() {
               <div className="flex justify-center items-center ">
                 <h2 className=" text-4xl font-medium  flex justify-center">Contactanos</h2>
               </div>
-              <div className=" text-xl pt-3 flex justify-center border-8 bg-opacity-65 rounded-lg">
+              <div className=" text-xl pt-3 flex justify-center bg-slate-900 border-8 bg-opacity-65 rounded-lg">
                 ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte.
                 Ponte en contacto con nuestro equipo amigable y profesional. Ya
                 sea que necesites más información sobre nuestros productos o
@@ -165,8 +165,8 @@ export default function Home() {
                 escucharte.
               </div>
               <div>
-                <button className="border">
-                  <Link href="/contacto">Contacta ya!</Link>
+                <button className="w-full  border-2 text-sky-600 border-sky-600 mt-6 text-lg rounded-lg font-medium bg-slate-50 hover:bg-sky-600 hover:text-white">
+                  <Link href="/contacto" className="">Contacta ya!</Link>
                 </button>
               </div>
             </div>
