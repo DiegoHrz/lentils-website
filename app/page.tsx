@@ -8,29 +8,46 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="-mt-24 w-screen">
-        <img src="./lentils.webp" alt="lentils" className="w-screen" />
+
+      {/* Inicio */}
+      <div className="-mt-24 w-screen h-screen"  >
+        <img
+          src="./lentils-banner-inicio.jpeg"
+          alt="lentils"
+          className="w-screen h-fit "
+        />
       </div>
-      <div className="w-screen">
-        <h1 className="text-2xl">Nuestra Marca</h1>
-        <div className="flex justify-between ">
-          <div className="w-1/2">
-            imagen
-            <img src="" alt="" />
-          </div>
-          <div className="flex flex-col w-1/2">
-            <div>e</div>
-            <div>
-              Bienvenido a Lentejas Sol del Norte, tu proveedor de confianza
-              para las lentejas más frescas y sabrosas. Nuestra dedicación a la
-              calidad y autenticidad nos convierte en la elección perfecta para
-              los amantes de la buena comida. Descubre la diferencia con Sol del
-              Norte.
+
+      {/* Marca */}
+      <div style={{ height: '66vh' }} className="w-screen  border" >
+        <div
+          className="bg-cover bg-center w-full h-full "
+          style={{ backgroundImage: 'url("/banner-2.jpeg")' }}
+        >
+          <h1 className="text-2xl">Nuestra Marca</h1>
+          <div className="flex justify-between ">
+            <div className="w-1/2">
+              imagen
+              <img src="" alt="" />
+            </div>
+            <div className="flex flex-col w-1/2">
+              <div>e</div>
+              <div>
+                Bienvenido a Lentejas Sol del Norte, tu proveedor de confianza
+                para las lentejas más frescas y sabrosas. Nuestra dedicación a
+                la calidad y autenticidad nos convierte en la elección perfecta
+                para los amantes de la buena comida. Descubre la diferencia con
+                Sol del Norte.
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-screen">
+
+
+
+      {/* Calidad */}
+      <div className="w-screen border">
         <h2>Calidad / Certificados del producto o marca</h2>
         <div>
           En Sol del Norte, nos comprometemos a ofrecer lentejas de la más alta
@@ -40,7 +57,9 @@ export default function Home() {
           hasta tu plato.
         </div>
       </div>
-      <div className="w-screen bg-white">
+
+      {/* Nutricion */}
+      <div  className="w-screen bg-white">
         <div className="flex flex-row-reverse justify-center items-center">
           <div className="w-1/2">
             <img src="./lentils-benefits.png" alt="" />
@@ -67,7 +86,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-screen h-screen bg-gray-50 flex ">
+      {/* Cotizacion */}
+      <div style={{height: '66.6666vh'}} className="w-screen bg-gray-50 flex ">
         <div className="flex w-2/6 h-5/6 justify-center items-center   ">
           <div className="flex justify-center  overflow-hidden items-center">
             <img src="/credit-card.png" alt="" className="h-1/2" />
@@ -147,26 +167,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-screen bg">
+      {/* //Contacto */}
+      <div className="w-screen bg" style={{height: '66.6666vh'}}>
         <div
-          className="bg-cover bg-center h-screen "
-          style={{ backgroundImage: 'url("/type-of-lentils.jpeg")' }}
+          className="bg-cover bg-center h-full "
+          style={{ backgroundImage: 'url("/legumes.jpeg")' }}
         >
-          <div className="h-full w-full border flex justify-center">
-            <div className=" flex flex-col justify-center items-center w-1/2 h-full border-2">
+          <div className="h-full w-full  flex justify-center">
+            <div className=" flex flex-col justify-center items-center w-1/2 h-full ">
               <div className="flex justify-center items-center ">
-                <h2 className=" text-4xl font-medium  flex justify-center">Contactanos</h2>
+                <h2 className=" text-6xl font-medium  flex justify-center text-gray-50">
+                  Contactanos
+                </h2>
               </div>
-              <div className=" text-xl pt-3 flex justify-center bg-slate-900 border-8 bg-opacity-65 rounded-lg">
+              <div className=" text-xl pt-3 flex justify-center bg-slate-600 border bg-opacity-65 rounded-lg mt-6 text-center">
                 ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte.
-                Ponte en contacto con nuestro equipo amigable y profesional. Ya
-                sea que necesites más información sobre nuestros productos o
-                desees discutir una colaboración, estamos listos para
+                Contáctanos para obtener más información sobre nuestros
+                productos o discutir una colaboración. Estamos listos para
                 escucharte.
               </div>
-              <div>
-                <button className="w-full  border-2 text-sky-600 border-sky-600 mt-6 text-lg rounded-lg font-medium bg-slate-50 hover:bg-sky-600 hover:text-white">
-                  <Link href="/contacto" className="">Contacta ya!</Link>
+              <div className="w-1/2">
+                <button className="w-full   text-sky-600  mt-6 text-lg font-medium  hover:underline hover:cursor-pointer">
+                  <Link href="/contacto" className="w-full">
+                    Contacta ➤
+                  </Link>
                 </button>
               </div>
             </div>
@@ -174,7 +198,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <div className=" mt-96 relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
