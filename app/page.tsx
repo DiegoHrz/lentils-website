@@ -157,7 +157,7 @@ export default function Home() {
               <div className="flex justify-center items-center ">
                 <h2 className=" text-4xl font-medium  flex justify-center">Contactanos</h2>
               </div>
-              <div className=" text-xl pt-3 flex justify-center">
+              <div className=" text-xl pt-3 flex justify-center border-8 bg-opacity-65 rounded-lg">
                 ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte.
                 Ponte en contacto con nuestro equipo amigable y profesional. Ya
                 sea que necesites más información sobre nuestros productos o
