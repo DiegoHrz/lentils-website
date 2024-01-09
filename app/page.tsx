@@ -6,7 +6,6 @@ export default function Home() {
   //   e.preventDefault()
   // }
 
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="-mt-24 w-screen">
@@ -68,50 +67,64 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-screen bg-gray-50 flex h-80 border-red-700 border h">
-        <div className="flex w-2/5 justify-center h-3/4">
-          <div className="flex justify-center h-full border ">
-            <img src="/credit-card.png" alt="" />
+      <div className="w-screen h-screen bg-gray-50 flex ">
+        <div className="flex w-2/6 h-5/6 justify-center items-center   ">
+          <div className="flex justify-center  overflow-hidden items-center">
+            <img src="/credit-card.png" alt="" className="h-1/2" />
           </div>
-          </div>
-          <div className="border flex flex-col justify-center text-center w-2/3">
-            <div className="text-gray-950">
-              <h2 className="text-gray-700 text-4xl font-medium border flex justify-center">
+        </div>
+
+        <div className="w-4/6 h-5/6 flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center text-center w-4/5 ">
+            <div className="flex justify-center w-fit h-fit items-center">
+              <h2 className="text-black text-4xl font-medium  flex justify-center">
                 Solicita tu cotizacion
               </h2>
             </div>
-            <div className="text-gray-950 pt-3">
+            <div className="text-gray-950 text-xl pt-3">
               <p>
                 ¡Solicita tu cotización hoy! Descubre precios competitivos para
                 las lentejas de Sol del Norte. Completa el formulario y conoce
                 cómo ser tu proveedor de confianza.
               </p>
             </div>
-            <div className="flex justify-between items-center border">
-              <form action="" className="text-gray-900 pt-8">
-                <div className="flex ">
-                  <div className="w-1/4 border">
-                    <label htmlFor="">Nombre</label>
-                    <input type="text" name="" id="" />
+            <div className="flex justify-between items-center   w-full">
+              <form action="" className="text-gray-900 pt-16  w-full">
+                <div className="flex justify-around  w-full ">
+                  <div className=" flex flex-col">
+                    <label htmlFor="" className="text-xl mb-2 font-medium">
+                      Nombre
+                    </label>
+                    <input type="text" name="" id="" className="border rounded-lg h-8 focus:border-sky-600"  />
                   </div>
-                  <div className="w-1/4">
-                    <label htmlFor="">Empresa</label>
-                    <input type="text" name="" id="" />
+                  <div className="  flex flex-col">
+                    <label htmlFor="" className="text-xl mb-2 font-medium">
+                      Empresa
+                    </label>
+                    <input type="text" name="" id="" className="border rounded-lg h-8" />
                   </div>
-                  <div className="w-1/4">
-                    <label htmlFor="">Correo</label>
-                    <input type="text" name="" id="" />
+                  <div className="  flex flex-col">
+                    <label htmlFor="" className="text-xl mb-2 font-medium">
+                      Correo
+                    </label>
+                    <input type="email" name="" id="" className="border rounded-lg h-8" />
                   </div>
-                  <div className="w-1/4">
-                    <label htmlFor="">Cantidad de Toneladas</label>
-                    <input type="text" name="" id="" />
+                  <div className="  flex flex-col">
+                    <label htmlFor="" className="text-xl mb-2 font-medium">
+                      Toneladas
+                    </label>
+                    <input type="text" name="" id="" className="border rounded-lg h-8" />
                   </div>
                 </div>
-                <button className="w-1/4 border bg-cyan-700 mt-3">Enviar</button>
+                <div className=" flex justify-center items-center text-center">
+                  <button className="w-full  border-2 text-sky-600 border-sky-600 mt-6 text-lg rounded-lg font-medium hover:bg-sky-600 hover:text-white">
+                    Enviar
+                  </button>
+                </div>
               </form>
             </div>
           </div>
-        <div></div>
+        </div>
       </div>
 
       <div className="w-screen">
