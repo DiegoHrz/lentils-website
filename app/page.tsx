@@ -95,25 +95,45 @@ export default function Home() {
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Nombre
                     </label>
-                    <input type="text" name="" id="" className="border rounded-lg h-8 focus:border-sky-600"  />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      className="border rounded-lg h-8 focus:border-sky-600"
+                    />
                   </div>
                   <div className="  flex flex-col">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Empresa
                     </label>
-                    <input type="text" name="" id="" className="border rounded-lg h-8" />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      className="border rounded-lg h-8"
+                    />
                   </div>
                   <div className="  flex flex-col">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Correo
                     </label>
-                    <input type="email" name="" id="" className="border rounded-lg h-8" />
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      className="border rounded-lg h-8"
+                    />
                   </div>
                   <div className="  flex flex-col">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Toneladas
                     </label>
-                    <input type="text" name="" id="" className="border rounded-lg h-8" />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      className="border rounded-lg h-8"
+                    />
                   </div>
                 </div>
                 <div className=" flex justify-center items-center text-center">
@@ -127,17 +147,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-screen">
-        <h2>Contactanos</h2>
-        <div>
-          ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte. Ponte en
-          contacto con nuestro equipo amigable y profesional. Ya sea que
-          necesites más información sobre nuestros productos o desees discutir
-          una colaboración, estamos listos para escucharte.
+      <div className="w-screen bg">
+        <div
+          className="bg-cover bg-center h-screen "
+          style={{ backgroundImage: 'url("/type-of-lentils.jpeg")' }}
+        >
+          <div className="h-full w-full border flex justify-center">
+            <div className=" flex flex-col justify-center items-center w-1/2 h-full border-2">
+              <div className="flex justify-center items-center ">
+                <h2 className=" text-4xl font-medium  flex justify-center">Contactanos</h2>
+              </div>
+              <div className=" text-xl pt-3 flex justify-center">
+                ¿Tienes preguntas o comentarios? Estamos aquí para ayudarte.
+                Ponte en contacto con nuestro equipo amigable y profesional. Ya
+                sea que necesites más información sobre nuestros productos o
+                desees discutir una colaboración, estamos listos para
+                escucharte.
+              </div>
+              <div>
+                <button className="border">
+                  <Link href="/contacto">Contacta ya!</Link>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <button className="border">
-          <Link href="/contacto">Contacta ya!</Link>
-        </button>
       </div>
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
