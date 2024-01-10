@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ParallaxBanner from "./components/ParallaxBanner";
 
 export default function Home() {
   // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
@@ -9,13 +10,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* Inicio */}
-      <div className="-mt-24 w-screen h-screen">
+      {/* <div className="-mt-24 w-screen h-screen">
         <img
           src="./lentils-banner-inicio.jpeg"
           alt="lentils"
           className="w-screen h-fit "
         />
-      </div>
+      </div> */}
+      <ParallaxBanner/>
 
       {/* Marca */}
 
@@ -134,8 +136,8 @@ export default function Home() {
                     </label>
                     <input
                       type="text"
-                      name=""
-                      id=""
+                      name="input-text"
+                      id="input-nombre"
                       className="border rounded-lg h-8 focus:border-sky-600"
                     />
                   </div>
