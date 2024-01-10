@@ -18,20 +18,25 @@ export default function Home() {
       </div>
 
       {/* Marca */}
+
       <div style={{ height: "66vh" }} className="w-screen  border">
         <div
           className="bg-cover bg-center w-full h-full "
           style={{ backgroundImage: 'url("/banner-2.jpeg")' }}
         >
+
+        <div className="">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
           <h1 className="text-2xl">Nuestra Marca</h1>
           <div className="flex justify-between ">
-            <div className="w-1/2">
-              imagen
-              <img src="" alt="" />
-            </div>
-            <div className="flex flex-col w-1/2">
-              <div>e</div>
-              <div>
+
+            <div className="flex flex-col  w-1/2">
+              <div className="border flex justify-center">
                 Bienvenido a Lentejas Sol del Norte, tu proveedor de confianza
                 para las lentejas más frescas y sabrosas. Nuestra dedicación a
                 la calidad y autenticidad nos convierte en la elección perfecta
