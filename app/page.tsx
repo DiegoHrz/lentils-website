@@ -8,9 +8,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
       {/* Inicio */}
-      <div className="-mt-24 w-screen h-screen"  >
+      <div className="-mt-24 w-screen h-screen">
         <img
           src="./lentils-banner-inicio.jpeg"
           alt="lentils"
@@ -19,7 +18,7 @@ export default function Home() {
       </div>
 
       {/* Marca */}
-      <div style={{ height: '66vh' }} className="w-screen  border" >
+      <div style={{ height: "66vh" }} className="w-screen  border">
         <div
           className="bg-cover bg-center w-full h-full "
           style={{ backgroundImage: 'url("/banner-2.jpeg")' }}
@@ -44,8 +43,6 @@ export default function Home() {
         </div>
       </div>
 
-
-
       {/* Calidad */}
       <div className="w-screen border">
         <h2>Calidad / Certificados del producto o marca</h2>
@@ -59,35 +56,50 @@ export default function Home() {
       </div>
 
       {/* Nutricion */}
-      <div  className="w-screen bg-white">
-        <div className="flex flex-row-reverse justify-center items-center">
-          <div className="w-1/2">
-            <img src="./lentils-benefits.png" alt="" />
+      <div
+        className="w-screen bg-white flex border "
+        style={{ height: "66.6666vh" }}
+      >
+
+
+        <div className="text-gray-700 w-1/2 border flex justify-center items-center">
+          <div className="w-3/4 border">
+            <h1 className="text-gray-700 text-5xl font-medium border">
+              Nutricion
+            </h1>
+            <p className="pt-3 text-xl font-normal">
+              Descubre los beneficios nutricionales de nuestras lentejas: ricas
+              en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
+              con Sol del Norte!
+            </p>
+            <br />
+            <p>Conoce como prepararlas:</p>
+            <p>
+              <Link href="/recetas" className="text-sky-600 hover:underline">
+                Recetas y Cocina ➤
+              </Link>
+            </p>
           </div>
-          <div className="text-gray-700 w-1/2 border flex justify-center">
-            <div className="w-2/3 border">
-              <h1 className="text-gray-700 text-5xl font-medium border">
-                Nutricion
-              </h1>
-              <p className="pt-3 text-xl font-normal">
-                Descubre los beneficios nutricionales de nuestras lentejas:
-                ricas en proteínas, fibra y nutrientes esenciales. ¡Bienestar
-                natural con Sol del Norte!
-              </p>
-              <br />
-              <p>Conoce como prepararlas:</p>
-              <p>
-                <Link href="/recetas" className="text-sky-600 hover:underline">
-                  Recetas y Cocina ➤
-                </Link>
-              </p>
-            </div>
+        </div>
+
+
+
+        <div className=" flex justify-center w-1/2 border-rose-700 border-2">
+          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center  border-rose-700 border">
+            <img
+              src="./lentils-benefits.png"
+              className="  "
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       {/* Cotizacion */}
-      <div style={{height: '66.6666vh'}} className="w-screen bg-gray-50 flex ">
+      <div
+        style={{ height: "66.6666vh" }}
+        className="w-screen bg-gray-50 flex "
+      >
         <div className="flex w-2/6 h-5/6 justify-center items-center   ">
           <div className="flex justify-center  overflow-hidden items-center">
             <img src="/credit-card.png" alt="" className="h-1/2" />
@@ -168,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* //Contacto */}
-      <div className="w-screen bg" style={{height: '66.6666vh'}}>
+      <div className="w-screen bg" style={{ height: "66.6666vh" }}>
         <div
           className="bg-cover bg-center h-full "
           style={{ backgroundImage: 'url("/legumes.jpeg")' }}
