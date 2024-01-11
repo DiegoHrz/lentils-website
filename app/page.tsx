@@ -22,10 +22,7 @@ export default function Home() {
 
       {/* Marca */}
 
-      <div
-        style={{ height: "40vh" }}
-        className="w-screen bg-zinc-100  flex r"
-      >
+      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex r">
         <div className=" w-2/5  ">
           <div className=" h-full flex justify-center">
             <div className="flex flex-col justify-center items-start  h-full ">
@@ -34,20 +31,20 @@ export default function Home() {
                 1,000+
               </div>
               <div className="text-slate-600 text-4xl font-medium">
-              5-star reviews
+                5-star reviews
               </div>
             </div>
           </div>
         </div>
         <div className="w-3/5 flex justify-center items-center">
-          <div className=" flex flex-col justify-center items-center h-full ">
-            <div className="flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center h-full m-2 ">
+            <div className="flex justify-center items-center mb-2">
               <h1 className="text-yellow-900 text-lg font-serif italic">
                 {" "}
                 El Mejor Distribuidor Mayoristas de Menestras en el Perú
               </h1>
             </div>
-            <div className="flex justify-center items-center"> 
+            <div className="flex justify-center items-center">
               <h2 className="text-neutral-500 text-lg  text-center">
                 ¡Bienvenido a Lentejas Sol del Norte! Tu proveedor de confianza
                 para las lentejas más frescas y sabrosas. Descubre la diferencia
@@ -59,44 +56,77 @@ export default function Home() {
       </div>
 
       {/* Calidad */}
-      <div className="w-screen border">
-        <h2>Calidad / Certificados del producto o marca</h2>
-        <div>
-          En Sol del Norte, nos comprometemos a ofrecer lentejas de la más alta
-          calidad. Cada lenteja que llega a tu mesa ha pasado por rigurosos
-          controles de calidad y está respaldada por certificaciones que
-          garantizan su pureza y frescura. Cuidamos cada detalle, desde el campo
-          hasta tu plato.
+      <div
+        style={{ height: "66vh", backgroundImage: 'url("/banner-2.jpeg")' }}
+        className="w-screen bg-cover bg-center flex flex-col"
+      >
+        <div className="flex justify-center items-center h-full">
+          <div className="flex-col justify-center items-center">
+            <div className="w-full text-center text-yellow-900 text-4xl mb-12">
+              Calidad de Nuestras Menestras
+            </div>
+            <div className="flex justify-center gap-14 ">
+
+              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                {" "}
+                <div className="flex flex-col justify-center items-center text-center font-medium">
+                  {" "}
+                  <div className="italic font-medium text-2xl">Calidad Premium:</div> Destaca la
+                  calidad superior de tus lentejas, seleccionadas y cultivadas
+                  cuidadosamente.
+                </div>
+              </div>
+
+              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="flex flex-col justify-center items-center text-center font-medium">
+                  <div className="italic font-medium text-2xl">Origen Confiable:</div>Resalta la
+                  autenticidad y origen confiable de tus productos para generar
+                  confianza.
+                </div>
+              </div>
+
+              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="flex flex-col justify-center items-center text-center font-medium">
+                  <div className="italic font-medium text-2xl text-yellow-900">Atractivas para Minoristas:</div>{" "}
+                  Menciona características atractivas, como empaque llamativo y
+                  versatilidad en la cocina.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Nutricion */}
       <div
-        className="w-screen bg-white flex border "
+        className="w-screen bg-white flex  "
         style={{ height: "66.6666vh" }}
       >
-        <div className="text-gray-700 w-1/2 border flex justify-center items-center">
-          <div className="w-3/4 border">
-            <h1 className="text-gray-700 text-5xl font-medium border">
+        <div className="text-gray-700 w-1/2  flex justify-center items-center">
+          <div className="w-3/4 ">
+            <h1 className="text-yellow-900 text-5xl font-medium ">
               Nutricion
             </h1>
-            <p className="pt-3 text-xl font-normal">
+            <p className="pt-3 text-xl font-normal text-neutral-500 ">
               Descubre los beneficios nutricionales de nuestras lentejas: ricas
               en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
               con Sol del Norte!
             </p>
             <br />
-            <p>Conoce como prepararlas:</p>
+            <p className="  italic">Conoce como prepararlas:</p>
             <p>
-              <Link href="/recetas" className="text-sky-600 hover:underline">
+              <Link
+                href="/recetas"
+                className="text-sky-600 cursor-pointer hover:underline"
+              >
                 Recetas y Cocina ➤
               </Link>
             </p>
           </div>
         </div>
 
-        <div className=" flex justify-center w-1/2 border-rose-700 border-2">
-          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center  border-rose-700 border">
+        <div className=" flex justify-center w-1/2 ">
+          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center ">
             <img src="./lentils-benefits.png" className="  " alt="" />
           </div>
         </div>
@@ -116,11 +146,11 @@ export default function Home() {
         <div className="w-4/6 h-5/6 flex justify-center items-center">
           <div className=" flex flex-col justify-center items-center text-center w-4/5 ">
             <div className="flex justify-center w-fit h-fit items-center">
-              <h2 className="text-black text-4xl font-medium  flex justify-center">
+              <h2 className="text-yellow-900 text-4xl font-medium  flex justify-center">
                 Solicita tu cotizacion
               </h2>
             </div>
-            <div className="text-gray-950 text-xl pt-3">
+            <div className="text-neutral-500 text-xl pt-3">
               <p>
                 ¡Solicita tu cotización hoy! Descubre precios competitivos para
                 las lentejas de Sol del Norte. Completa el formulario y conoce
@@ -138,7 +168,7 @@ export default function Home() {
                       type="text"
                       name="input-text"
                       id="input-nombre"
-                      className="border rounded-lg h-8 focus:border-sky-600"
+                      className="border-2 rounded-lg h-8 focus:border-sky-600"
                     />
                   </div>
                   <div className="  flex flex-col">
@@ -149,7 +179,7 @@ export default function Home() {
                       type="text"
                       name=""
                       id=""
-                      className="border rounded-lg h-8"
+                      className="border-2 rounded-lg h-8"
                     />
                   </div>
                   <div className="  flex flex-col">
@@ -160,7 +190,7 @@ export default function Home() {
                       type="email"
                       name=""
                       id=""
-                      className="border rounded-lg h-8"
+                      className="border-2 rounded-lg h-8"
                     />
                   </div>
                   <div className="  flex flex-col">
@@ -171,7 +201,7 @@ export default function Home() {
                       type="text"
                       name=""
                       id=""
-                      className="border rounded-lg h-8"
+                      className="border-2 rounded-lg h-8"
                     />
                   </div>
                 </div>
