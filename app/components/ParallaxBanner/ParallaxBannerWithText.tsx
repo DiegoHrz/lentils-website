@@ -54,8 +54,10 @@ const ParallaxBannerWithText = () => {
             <button
               type="button"
               className=" border-2 rounded-md pl-12 pr-12 pt-4 pb-4 text-sm font-semibold hover:bg-sky-600 hover:border-sky-600 cursor-pointer "
-            ><Link href='/contacto' className="cursor-pointer">
-              CONTACTANOS</Link>
+            >
+              <Link href="/contacto" className="cursor-pointer">
+                CONTACTANOS
+              </Link>
             </button>
           </div>
         </div>

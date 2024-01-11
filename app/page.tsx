@@ -18,34 +18,41 @@ export default function Home() {
           className="w-screen h-fit "
         />
       </div> */}
-      <ParallaxBannerWithText/>
+      <ParallaxBannerWithText />
 
       {/* Marca */}
 
-      <div style={{ height: "66vh" }} className="w-screen  border">
-        <div
-          className="bg-cover bg-center w-full h-full "
-          style={{ backgroundImage: 'url("/banner-2.jpeg")' }}
-        >
-
-        <div className="">
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+      <div
+        style={{ height: "40vh" }}
+        className="w-screen bg-zinc-100  flex r"
+      >
+        <div className=" w-2/5  ">
+          <div className=" h-full flex justify-center">
+            <div className="flex flex-col justify-center items-start  h-full ">
+              <div className="text-2xl mb-3 text-yellow-400 ">★★★★★</div>
+              <div className="text-slate-600 text-4xl font-medium  ">
+                1,000+
+              </div>
+              <div className="text-slate-600 text-4xl font-medium">
+              5-star reviews
+              </div>
+            </div>
           </div>
         </div>
-          <h1 className="text-2xl">Nuestra Marca</h1>
-          <div className="flex justify-between ">
-
-            <div className="flex flex-col  w-1/2">
-              <div className="border flex justify-center">
-                Bienvenido a Lentejas Sol del Norte, tu proveedor de confianza
-                para las lentejas más frescas y sabrosas. Nuestra dedicación a
-                la calidad y autenticidad nos convierte en la elección perfecta
-                para los amantes de la buena comida. Descubre la diferencia con
-                Sol del Norte.
-              </div>
+        <div className="w-3/5 flex justify-center items-center">
+          <div className=" flex flex-col justify-center items-center h-full ">
+            <div className="flex justify-center items-center">
+              <h1 className="text-yellow-900 text-lg font-serif italic">
+                {" "}
+                El Mejor Distribuidor Mayoristas de Menestras en el Perú
+              </h1>
+            </div>
+            <div className="flex justify-center items-center"> 
+              <h2 className="text-neutral-500 text-lg  text-center">
+                ¡Bienvenido a Lentejas Sol del Norte! Tu proveedor de confianza
+                para las lentejas más frescas y sabrosas. Descubre la diferencia
+                con Sol del Norte.
+              </h2>
             </div>
           </div>
         </div>
@@ -68,8 +75,6 @@ export default function Home() {
         className="w-screen bg-white flex border "
         style={{ height: "66.6666vh" }}
       >
-
-
         <div className="text-gray-700 w-1/2 border flex justify-center items-center">
           <div className="w-3/4 border">
             <h1 className="text-gray-700 text-5xl font-medium border">
@@ -90,15 +95,9 @@ export default function Home() {
           </div>
         </div>
 
-
-
         <div className=" flex justify-center w-1/2 border-rose-700 border-2">
           <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center  border-rose-700 border">
-            <img
-              src="./lentils-benefits.png"
-              className="  "
-              alt=""
-            />
+            <img src="./lentils-benefits.png" className="  " alt="" />
           </div>
         </div>
       </div>
@@ -186,7 +185,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
 
       {/* //Contacto */}
       <div className="w-screen bg" style={{ height: "66.6666vh" }}>
@@ -218,10 +216,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
 
       <div className=" mt-96 relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
