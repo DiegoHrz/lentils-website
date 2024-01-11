@@ -38,7 +38,7 @@ const ParallaxBannerWithText = () => {
       </div>
       {/*div que no quiero que reciba el -z-20*/}
       <div className="flex items-center justify-center h-screen text-center w-full z-50">
-        <div className="bg-transparent z-50 text-white">
+        <div className="bg-transparent  text-white">
           <div className="text-4xl font-semibold m-6">
             {" "}
             Lentejas Sol del Norte
