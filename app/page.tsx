@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ParallaxBannerWithText from "./components/ParallaxBanner/ParallaxBannerWithText";
 import ParallaxBanner from "./components/ParallaxBanner/ParallaxBanner";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
@@ -66,28 +67,33 @@ export default function Home() {
               Calidad de Nuestras Menestras
             </div>
             <div className="flex justify-center gap-14 ">
-
               <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
                 {" "}
                 <div className="flex flex-col justify-center items-center text-center font-medium">
                   {" "}
-                  <div className="italic font-medium text-2xl">Calidad Premium:</div> Destaca la
-                  calidad superior de tus lentejas, seleccionadas y cultivadas
-                  cuidadosamente.
+                  <div className="italic font-medium text-2xl">
+                    Calidad Premium:
+                  </div>{" "}
+                  Destaca la calidad superior de tus lentejas, seleccionadas y
+                  cultivadas cuidadosamente.
                 </div>
               </div>
 
               <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
                 <div className="flex flex-col justify-center items-center text-center font-medium">
-                  <div className="italic font-medium text-2xl">Origen Confiable:</div>Resalta la
-                  autenticidad y origen confiable de tus productos para generar
-                  confianza.
+                  <div className="italic font-medium text-2xl">
+                    Origen Confiable:
+                  </div>
+                  Resalta la autenticidad y origen confiable de tus productos
+                  para generar confianza.
                 </div>
               </div>
 
               <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
                 <div className="flex flex-col justify-center items-center text-center font-medium">
-                  <div className="italic font-medium text-2xl text-yellow-900">Atractivas para Minoristas:</div>{" "}
+                  <div className="italic font-medium text-2xl text-yellow-900">
+                    Atractivas para Minoristas:
+                  </div>{" "}
                   Menciona características atractivas, como empaque llamativo y
                   versatilidad en la cocina.
                 </div>
@@ -98,15 +104,10 @@ export default function Home() {
       </div>
 
       {/* Nutricion */}
-      <div
-        className="w-screen bg-white flex  "
-        style={{ height: "66.6666vh" }}
-      >
+      <div className="w-screen bg-white flex  " style={{ height: "66.6666vh" }}>
         <div className="text-gray-700 w-1/2  flex justify-center items-center">
           <div className="w-3/4 ">
-            <h1 className="text-yellow-900 text-5xl font-medium ">
-              Nutricion
-            </h1>
+            <h1 className="text-yellow-900 text-5xl font-medium ">Nutricion</h1>
             <p className="pt-3 text-xl font-normal text-neutral-500 ">
               Descubre los beneficios nutricionales de nuestras lentejas: ricas
               en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
@@ -245,87 +246,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className=" mt-96 relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
