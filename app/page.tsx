@@ -189,7 +189,7 @@ export default function Home() {
       </div>
 
       {/* GIF DE AGRICULTURA */}
-      <div className="relative h-screen w-screen">
+      <div className="relative  w-screen" style={{ height: "66.6666vh" }}>
         {/* Imagen de fondo */}
         <div className="object-cover h-full w-full">
           <img
@@ -201,8 +201,8 @@ export default function Home() {
 
         {/* Contenido encima de la imagen */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-          <h1 className="text-4xl font-bold">Título</h1>
-          <p className="text-lg">Texto pequeño</p>
+          <h1 className="text-4xl font-bold">Lentejas Sol del Norte</h1>
+          <p className="text-lg">Calidad hasta en los pequeños detalles</p>
         </div>
       </div>
 
@@ -237,7 +237,7 @@ export default function Home() {
       </div>
 
       {/* //Contacto */}
-      <div className="w-screen bg" style={{ height: "66.6666vh" }}>
+      {/* <div className="w-screen bg" style={{ height: "66.6666vh" }}>
         <div
           className="bg-cover bg-center h-full "
           style={{ backgroundImage: 'url("/legumes.jpeg")' }}
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
