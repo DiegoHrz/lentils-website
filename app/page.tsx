@@ -103,7 +103,6 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* Cotizacion */}
       <div
         style={{ height: "66.6666vh" }}
@@ -236,8 +235,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* //Contacto */}
-      {/* <div className="w-screen bg" style={{ height: "66.6666vh" }}>
+      {/* //Contacto  
+      <div className="w-screen bg" style={{ height: "66.6666vh" }}>
         <div
           className="bg-cover bg-center h-full "
           style={{ backgroundImage: 'url("/legumes.jpeg")' }}
