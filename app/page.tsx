@@ -103,35 +103,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Nutricion */}
-      <div className="w-screen bg-white flex  " style={{ height: "66.6666vh" }}>
-        <div className="text-gray-700 w-1/2  flex justify-center items-center">
-          <div className="w-3/4 ">
-            <h1 className="text-yellow-900 text-5xl font-medium ">Nutricion</h1>
-            <p className="pt-3 text-xl font-normal text-neutral-500 ">
-              Descubre los beneficios nutricionales de nuestras lentejas: ricas
-              en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
-              con Sol del Norte!
-            </p>
-            <br />
-            <p className="  italic">Conoce como prepararlas:</p>
-            <p>
-              <Link
-                href="/recetas"
-                className="text-sky-600 cursor-pointer hover:underline"
-              >
-                Recetas y Cocina ➤
-              </Link>
-            </p>
-          </div>
-        </div>
-
-        <div className=" flex justify-center w-1/2 ">
-          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center ">
-            <img src="./lentils-benefits.png" className="  " alt="" />
-          </div>
-        </div>
-      </div>
 
       {/* Cotizacion */}
       <div
@@ -213,6 +184,54 @@ export default function Home() {
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* GIF DE AGRICULTURA */}
+      <div className="relative h-screen w-screen">
+        {/* Imagen de fondo */}
+        <div className="object-cover h-full w-full">
+          <img
+            src="/giphylentils.gif"
+            alt=""
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Contenido encima de la imagen */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+          <h1 className="text-4xl font-bold">Título</h1>
+          <p className="text-lg">Texto pequeño</p>
+        </div>
+      </div>
+
+      {/* Nutricion */}
+      <div className="w-screen bg-white flex  " style={{ height: "66.6666vh" }}>
+        <div className="text-gray-700 w-1/2  flex justify-center items-center">
+          <div className="w-3/4 ">
+            <h1 className="text-yellow-900 text-5xl font-medium ">Nutricion</h1>
+            <p className="pt-3 text-xl font-normal text-neutral-500 ">
+              Descubre los beneficios nutricionales de nuestras lentejas: ricas
+              en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
+              con Sol del Norte!
+            </p>
+            <br />
+            <p className="  italic">Conoce como prepararlas:</p>
+            <p>
+              <Link
+                href="/recetas"
+                className="text-sky-600 cursor-pointer hover:underline"
+              >
+                Recetas y Cocina ➤
+              </Link>
+            </p>
+          </div>
+        </div>
+
+        <div className=" flex justify-center w-1/2 ">
+          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center ">
+            <img src="./lentils-benefits.png" className="  " alt="" />
           </div>
         </div>
       </div>
