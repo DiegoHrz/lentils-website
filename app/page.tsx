@@ -67,38 +67,67 @@ export default function Home() {
               Calidad de Nuestras Menestras
             </div>
             <div className="flex justify-center gap-14 ">
-              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
-                <div>
-                  {" "}
-                  <div className="flex flex-col justify-center items-center text-center font-medium">
-                    {" "}
-                    <div className="italic font-medium text-2xl">
-                      Calidad Premium:
-                    </div>{" "}
-                    Destaca la calidad superior de tus lentejas, seleccionadas y
-                    cultivadas cuidadosamente.
+              {/* Calidad - Calidad Premium  */}
+              <div className="w-1/4 ">
+                <div className="flex justify-center h-1/3  mb-3">
+                  <div className="flex justify-center h-full w-1/2  object-cover">
+                    <img src="/supply-chain.png" alt="" />
                   </div>
-                  <div className="flex justify-center"></div>
                 </div>
 
-                <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
                   <div className="flex flex-col justify-center items-center text-center font-medium">
-                    <div className="italic font-medium text-2xl">
-                      Origen Confiable:
+                    {" "}
+                    <div className="italic font-medium text-2xl ">
+                      Calidad Premium:
                     </div>
-                    Resalta la autenticidad y origen confiable de tus productos
-                    para generar confianza.
+                    <div>
+                      Destaca la calidad superior de tus lentejas, seleccionadas
+                      y cultivadas cuidadosamente.
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
-                <div className="flex flex-col justify-center items-center text-center font-medium">
-                  <div className="italic font-medium text-2xl text-yellow-900">
-                    Atractivas para Minoristas:
-                  </div>{" "}
-                  Menciona características atractivas, como empaque llamativo y
-                  versatilidad en la cocina.
+              {/* Calidad - Origen Confiable  */}
+              <div className="w-1/4 ">
+                <div className="flex justify-center h-1/3  mb-3">
+                  <div className="flex justify-center h-full w-1/2  object-cover">
+                    <img src="/planting.png" alt="" />
+                  </div>
+                </div>
+
+                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                  <div className="flex flex-col justify-center items-center text-center font-medium">
+                    <div className="italic font-medium text-2xl ">
+                      Origen Confiable:
+                    </div>
+                    <div>
+                      Resalta la autenticidad y origen confiable de tus
+                      productos para generar confianza.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Calidad - Atractivo para minoristas  */}
+              <div className="w-1/4 ">
+                <div className="flex justify-center h-1/3  mb-3">
+                  <div className="flex justify-center h-full w-1/2  object-cover">
+                    <img src="/value-chain.png" alt="" />
+                  </div>
+                </div>
+
+                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                  <div className="flex flex-col justify-center items-center text-center font-medium">
+                    <div className="italic font-medium text-2xl ">
+                      Atractivas para Minoristas:
+                    </div>
+                    <div>
+                      Menciona características atractivas, como empaque
+                      llamativo y versatilidad en la cocina.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
