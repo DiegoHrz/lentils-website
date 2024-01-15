@@ -1,5 +1,11 @@
 const Recetas = () => {
-  return <div>recetas</div>;
+  return (
+    <div className="w-screen h-screen">
+      <div className="w-screen h-screen">
+        <div>Recetas</div>
+      </div>
+    </div>
+  );
 };
 
 export default Recetas;

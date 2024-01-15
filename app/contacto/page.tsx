@@ -1,7 +1,9 @@
 const Contacto = () => {
   return (
-    <div>
-      <div>contacto</div>
+    <div className="w-screen h-screen">
+      <div className="w-screen h-screen">
+        <div>Contactanos</div>
+      </div>
     </div>
   );
 };

@@ -68,24 +68,27 @@ export default function Home() {
             </div>
             <div className="flex justify-center gap-14 ">
               <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
-                {" "}
-                <div className="flex flex-col justify-center items-center text-center font-medium">
+                <div>
                   {" "}
-                  <div className="italic font-medium text-2xl">
-                    Calidad Premium:
-                  </div>{" "}
-                  Destaca la calidad superior de tus lentejas, seleccionadas y
-                  cultivadas cuidadosamente.
-                </div>
-              </div>
-
-              <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
-                <div className="flex flex-col justify-center items-center text-center font-medium">
-                  <div className="italic font-medium text-2xl">
-                    Origen Confiable:
+                  <div className="flex flex-col justify-center items-center text-center font-medium">
+                    {" "}
+                    <div className="italic font-medium text-2xl">
+                      Calidad Premium:
+                    </div>{" "}
+                    Destaca la calidad superior de tus lentejas, seleccionadas y
+                    cultivadas cuidadosamente.
                   </div>
-                  Resalta la autenticidad y origen confiable de tus productos
-                  para generar confianza.
+                  <div className="flex justify-center"></div>
+                </div>
+
+                <div className="w-1/4 text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                  <div className="flex flex-col justify-center items-center text-center font-medium">
+                    <div className="italic font-medium text-2xl">
+                      Origen Confiable:
+                    </div>
+                    Resalta la autenticidad y origen confiable de tus productos
+                    para generar confianza.
+                  </div>
                 </div>
               </div>
 
