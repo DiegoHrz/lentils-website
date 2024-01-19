@@ -1,12 +1,12 @@
 const Contacto = () => {
   return (
     <div>
-      <div>
-        hola
-      </div>
+      <div>hola</div>
       <div className="w-screen h-screen pt-28">
         <div className="w-screen h-screen text-red-800">
-          <div>Contactanos</div>
+          <div>
+            <form action=""></form>
+          </div>
         </div>
       </div>
     </div>

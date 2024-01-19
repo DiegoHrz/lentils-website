@@ -2,10 +2,10 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
-
-
-const Navbar: React.FC = () => {
+const Navbar = () => {
+  const path = usePathname();
   // State para el scroll
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       //se obtiene la posición de scroll vertical
       const scrollPosition = window.scrollY;
-      //si scrollPosition es > 0 asignar true a isScrolled
+
       setIsScrolled(scrollPosition > 0);
     };
     //Cada vez que se genere el evento de scroll (el usuario scrollee) se ejecuta el handle
@@ -25,6 +25,9 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  const homepage = path === "/";
+
+  const navbarStyleHomePage = homepage ? "bg-red" : "bg-blue";
 
   const navbarStyle = isScrolled
     ? " bg-white text-brown text-amber-800"
@@ -32,7 +35,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="fixed z-50">
-      <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2">
+      <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2 ">
         Envios a toda Latinoamerica , Canada y USA.
       </div>
       <div
