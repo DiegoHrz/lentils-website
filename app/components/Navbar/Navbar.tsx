@@ -25,9 +25,9 @@ const Navbar = () => {
     };
   }, []);
 
-  const homepage = path === "/";
+  const homepage:boolean = path === "/";
 
-  const navbarStyleHomePage = homepage ? "bg-red" : "bg-blue";
+  const navbarStyleHomePage = homepage ? "" : "mt-16";
 
   const navbarStyle = isScrolled
     ? " bg-white text-brown text-amber-800"
@@ -39,7 +39,7 @@ const Navbar = () => {
         Envios a toda Latinoamerica , Canada y USA.
       </div>
       <div
-        className={`flex justify-between p-3 w-screen fixed ${navbarStyle} bg-opacity-95 m-0 `}
+        className={`flex justify-between p-3 w-screen fixed ${navbarStyle} bg-opacity-95 m-0 ${navbarStyleHomePage}`}
       >
         <div className="flex items-center m-0">
           <div className="flex flex-col justify-center items-center text-center text-lg font-medium hover:cursor-pointer  h-fit m-0">
