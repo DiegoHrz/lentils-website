@@ -27,19 +27,19 @@ const Navbar = () => {
 
   const homepage:boolean = path === "/";
 
-  const navbarStyleHomePage = homepage ? "" : "mt-16";
+  const fixedHomePage = homepage ? "fixed" : isScrolled ? "fixed" : "";
 
   const navbarStyle = isScrolled
     ? " bg-white text-brown text-amber-800"
     : "bg-transparent bg-opacity-95 hover:bg-white hover:text-brown hover:text-amber-800";
 
   return (
-    <div className="fixed z-50">
+    <div className={`${fixedHomePage} z-50 `}> 
       <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2 ">
         Envios a toda Latinoamerica , Canada y USA.
       </div>
       <div
-        className={`flex justify-between p-3 w-screen fixed ${navbarStyle} bg-opacity-95 m-0 ${navbarStyleHomePage}`}
+        className={`flex justify-between p-3 w-screen ${navbarStyle} bg-opacity-95 m-0 ${fixedHomePage}`}
       >
         <div className="flex items-center m-0">
           <div className="flex flex-col justify-center items-center text-center text-lg font-medium hover:cursor-pointer  h-fit m-0">

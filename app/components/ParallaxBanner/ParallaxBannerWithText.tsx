@@ -18,7 +18,7 @@ const ParallaxBannerWithText = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden -mt-24 ">
+    <div className="relative h-screen w-screen overflow-hidden  ">
       {/*div que quiero que reciba el -z-20*/}
       <div
         className="absolute top-0 transform -translate-x-1/2 -z-20"
@@ -29,12 +29,6 @@ const ParallaxBannerWithText = () => {
           alt=""
           className="w-screen h-screen opacity-80"
         />
-        {/* <Image
-          src="/legumes.jpeg"
-          alt="Parallax Image"
-          width={1200}
-          height={800}
-        /> */}
       </div>
       {/*div que no quiero que reciba el -z-20*/}
       <div className="flex items-center justify-center h-screen text-center w-full z-50">

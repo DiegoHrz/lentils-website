@@ -10,7 +10,7 @@ export default function Home() {
   // }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       {/* Inicio */}
       {/* <div className="-mt-24 w-screen h-screen">
         <img
@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* Marca */}
 
-      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex r">
+      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex">
         <div className=" w-2/5  ">
           <div className=" h-full flex justify-center">
             <div className="flex flex-col justify-center items-start  h-full ">
