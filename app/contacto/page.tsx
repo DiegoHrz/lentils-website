@@ -17,31 +17,39 @@ const Contacto = () => {
 
       <div className="flex" style={{ height: "75vh" }}>
         <div className="w-1/2">
-          <div>
-            <div>
+          <div className="border">
+            <div className="m-10 border">
               <form action="" className="">
-                <div className="flex flex-col">
+                <div className="flex flex-col border m-3">
                   <label htmlFor=""> Nombre Completo</label>
-                  <input type="text" name="" id="" />
+                  <input type="text" name="" id="" className="rounded-md" placeholder="Ingresa tu Nombre" />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border">
                   <label htmlFor="">Correo Electronico</label>
-                  <input type="text" name="" id="" />
+                  <input type="text" name="" id="" placeholder="Ingresa tu Correo"/>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border">
                   <label htmlFor="">Celular</label>
-                  <input type="text" name="" id="" />
+                  <input type="text" name="" id="" placeholder="Ingresa tu Numero" />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border">
                   <label htmlFor="">Asunto</label>
-                  <input type="text" name="" id="" />
+                  <input type="text" name="" id="" placeholder="Ingresa el Asunto" />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border">
                   <label htmlFor="">Mensaje</label>
                   <textarea placeholder="Escribenos"></textarea>
                 </div>
-                <div className="border">
-                  <input type="submit" value="Enviar" />
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label htmlFor="">Aceptar Teminos y Condiciones</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label htmlFor="">Aceptar recibir notificaciones de actualizaciones en novedades</label>
+                </div>
+                <div className="border w-fit flex justify-center items-center">
+                  <input type="submit" value="Enviar"/>
                 </div>
               </form>
             </div>
