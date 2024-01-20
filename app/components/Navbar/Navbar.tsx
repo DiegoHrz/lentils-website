@@ -4,15 +4,16 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
-  const path = usePathname();
+const Navbar: React.FC = () => {
+  
+  const path: string = usePathname();
   // State para el scroll
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
       //se obtiene la posición de scroll vertical
-      const scrollPosition = window.scrollY;
+      const scrollPosition: number = window.scrollY;
 
       setIsScrolled(scrollPosition > 0);
     };
@@ -25,16 +26,16 @@ const Navbar = () => {
     };
   }, []);
 
-  const homepage:boolean = path === "/";
+  const homepage: boolean = path === "/";
 
-  const fixedHomePage = homepage ? "fixed" : isScrolled ? "fixed" : "";
+  const fixedHomePage: string = homepage ? "fixed" : isScrolled ? "fixed" : "";
 
-  const navbarStyle = isScrolled
+  const navbarStyle: string = isScrolled
     ? " bg-white text-brown text-amber-800"
     : "bg-transparent bg-opacity-95 hover:bg-white hover:text-brown hover:text-amber-800";
 
   return (
-    <div className={`${fixedHomePage} z-50 `}> 
+    <div className={`${fixedHomePage} z-50 `}>
       <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2 ">
         Envios a toda Latinoamerica , Canada y USA.
       </div>
