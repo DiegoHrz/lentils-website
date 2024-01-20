@@ -20,23 +20,23 @@ const Contacto = () => {
           <div className="border">
             <div className="m-10 border">
               <form action="" className="">
-                <div className="flex flex-col border m-3">
+                <div className="flex flex-col border m-3 rounded-md">
                   <label htmlFor=""> Nombre Completo</label>
                   <input type="text" name="" id="" className="rounded-md" placeholder="Ingresa tu Nombre" />
                 </div>
-                <div className="flex flex-col border">
+                <div className="flex flex-col border m-3 rounded-md">
                   <label htmlFor="">Correo Electronico</label>
                   <input type="text" name="" id="" placeholder="Ingresa tu Correo"/>
                 </div>
-                <div className="flex flex-col border">
+                <div className="flex flex-col border m-3 rounded-md">
                   <label htmlFor="">Celular</label>
                   <input type="text" name="" id="" placeholder="Ingresa tu Numero" />
                 </div>
-                <div className="flex flex-col border">
+                <div className="flex flex-col border m-3 rounded-md">
                   <label htmlFor="">Asunto</label>
                   <input type="text" name="" id="" placeholder="Ingresa el Asunto" />
                 </div>
-                <div className="flex flex-col border">
+                <div className="flex flex-col border m-3 rounded-md">
                   <label htmlFor="">Mensaje</label>
                   <textarea placeholder="Escribenos"></textarea>
                 </div>
