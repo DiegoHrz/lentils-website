@@ -34,9 +34,9 @@ const Contacto = () => {
           </div> */}
 
       <div className="flex  rounded-lg mx-14" style={{ height: "100vh" }}>
-        <div className="w-3/6 bg-neutral-50  rounded-2xl">
+        <div className="w-4/6 bg-neutral-50  rounded-2xl">
           <div className="  rounded-lg">
-            <div className="m-10 ">
+            <div className="m-14 ">
               <form action="" className="">
                 <div className="flex flex-col border mx-3 my-5  rounded-lg bg-white text-black">
                   <label htmlFor="" className="m-3 text-sm">
@@ -121,10 +121,10 @@ const Contacto = () => {
           </div>
         </div>
         <div className="w-3/6">
-          <div className=" h-full flex justify-center items-start">
+          <div className=" h-full flex justify-center items-start mt-28">
             <div className=" ">
-              <div className="text-yellow-900 text-4xl font-medium  flex m-10 border-b-4 w-1/6 border-amber-800">
-                Contactanos
+              <div className="text-red-800 text-2xl font-medium  flex border-b-4 w-1/6 ml-10 border-amber-800">
+                Encuentranos
               </div>
               <div className="text-yellow-900 text-lg font-serif italic font-medium  flex m-10">
                 Listos para resolver todas tus dudas y hacer ventas contigo en
@@ -148,10 +148,10 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen">
-        <div className="h-screen">
-          <div className="h-screen">¿ Tienes dudas o preguntas ?</div>
-          <div>
+      <div className="">
+        <div className=" text-black">
+          <div className="">¿ Tienes dudas o preguntas ?</div>
+          <div className="text-black">
             Puedes llamarnos a los siguientes número telefónicos (+51) 1 323
             8817 de nuestra tienda principal en lima o envíanos un email a
             ventas@grupodionys.com.pe donde también podrás solicitar
