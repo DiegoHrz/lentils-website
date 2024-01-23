@@ -34,7 +34,7 @@ const Contacto = () => {
           </div> */}
 
       <div className="flex  rounded-lg mx-14" style={{ height: "100vh" }}>
-        <div className="w-3/5 bg-neutral-50  rounded-2xl">
+        <div className="w-3/6 bg-neutral-50  rounded-2xl">
           <div className="  rounded-lg">
             <div className="m-10 ">
               <form action="" className="">
@@ -120,28 +120,28 @@ const Contacto = () => {
             </div>
           </div>
         </div>
-        <div className="w-2/5">
+        <div className="w-3/6">
           <div className=" h-full flex justify-center items-start">
             <div className=" ">
-              <div className="text-yellow-900 text-4xl font-medium  flex m-10">
+              <div className="text-yellow-900 text-4xl font-medium  flex m-10 border-b-4 w-1/6 border-amber-800">
                 Contactanos
               </div>
               <div className="text-yellow-900 text-lg font-serif italic font-medium  flex m-10">
                 Listos para resolver todas tus dudas y hacer ventas contigo en
                 todo momento
               </div>
-              <div className="ml-20 text-black">
-                <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className="border rounded-full w-10 h-10 mr-4 flex justify-center items-center">☎️</div>  Telefono: (01) 5050505</a>
+              <div className="ml-12 text-black flex flex-col gap-8">
+                <div className="">
+                  <a href="" className="flex justify-start items-center"><div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">☎️</div>  Telefono: (01) 5050505</a>
                 </div>
-                <div className="my-20">
-                  <a href="" className="flex justify-start items-center"> <div className="border rounded-full w-10 h-10 mr-4 flex justify-center items-center">✆</div> Whatsapp: +51 974377347</a>
+                <div className=" ">
+                  <a href="" className="flex justify-start items-center"> <div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">✆</div> Whatsapp: +51 974377347</a>
                 </div>
-                <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-10 h-10 mr-4 flex justify-center items-center">📍</div>Oficinas: Av Siempreviva 241</a>
+                <div className="">
+                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">📍</div>Oficinas: Av Siempreviva 241</a>
                 </div>
-                <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-10 h-10 mr-4 flex justify-center items-center">✉️</div>Correo: tusventasfavoritas@gmail.com</a>
+                <div className="">
+                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">✉️</div>Correo: tusventasfavoritas@gmail.com</a>
                 </div>
               </div>
             </div>
