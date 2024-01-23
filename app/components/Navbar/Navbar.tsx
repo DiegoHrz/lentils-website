@@ -36,9 +36,8 @@ const Navbar: React.FC = () => {
   const topContainerStyle: React.CSSProperties = {
     marginTop: isScrolled ? "500px" : "0", // Ajusta según sea necesario
   };
-  console.log(topContainerStyle);
 
-  //style={{ height: "100vh" }}
+
 
   return (
     <div>
@@ -104,7 +103,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-        <div style={{ height: isScrolled ? "100px" : "0" }}></div>
+        <div style={{ height: isScrolled ? "103px" : "0" }}></div>
     </div>
   );
 };
