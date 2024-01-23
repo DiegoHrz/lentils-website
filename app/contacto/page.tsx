@@ -132,16 +132,16 @@ const Contacto = () => {
               </div>
               <div className="ml-20 text-black">
                 <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full text-lg">☎️</div>  Telefono: (01) 5050505</a>
+                  <a href="" className="flex justify-start items-center"><div className="border rounded-full w-10 h-10 mr-4 flex justify-center items-center">☎️</div>  Telefono: (01) 5050505</a>
                 </div>
                 <div className="my-20">
-                  <a href="" className="flex justify-start items-center"> <div className=" border rounded-full">✆</div> Whatsapp: +51 974377347</a>
+                  <a href="" className="flex justify-start items-center"> <div className="border rounded-full w-10 h-10 mr-4 flex justify-center items-center">✆</div> Whatsapp: +51 974377347</a>
                 </div>
                 <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full">📍</div>Oficinas: Av Siempreviva 241</a>
+                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-10 h-10 mr-4 flex justify-center items-center">📍</div>Oficinas: Av Siempreviva 241</a>
                 </div>
                 <div className="my-20">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full">✉️</div>Correo: tusventasfavoritas@gmail.com</a>
+                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-10 h-10 mr-4 flex justify-center items-center">✉️</div>Correo: tusventasfavoritas@gmail.com</a>
                 </div>
               </div>
             </div>
