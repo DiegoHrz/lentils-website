@@ -115,6 +115,7 @@ const Contacto = () => {
                 </div>
                 <div className="border   flex justify-center items-center rounded-lg mx-3 bg-white text-black">
                   <input type="submit" value="Enviar" className="" />
+                  
                 </div>
               </form>
             </div>
