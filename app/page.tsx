@@ -27,7 +27,7 @@ export default function Home() {
         <div className=" w-2/5  ">
           <div className=" h-full flex justify-center">
             <div className="flex flex-col justify-center items-start  h-full ">
-              <div className="text-2xl mb-3 text-yellow-400 ">★★★★★</div>
+              <div className="text-2xl mb-3 text-yellow-400 lg:block">★★★★★</div>
               <div className="text-slate-600 text-4xl font-medium  ">
                 1,000+
               </div>
