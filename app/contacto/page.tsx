@@ -96,6 +96,8 @@ const Contacto = () => {
                   <textarea
                     placeholder="Escribenos"
                     className=" m-3"
+                    cols={5}
+                    rows={3}
                   ></textarea>
                 </div>
                 <div className="mx-3 my-6">
