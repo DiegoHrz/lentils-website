@@ -1,8 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import ParallaxBannerWithText from "./components/ParallaxBanner/ParallaxBannerWithText";
-import ParallaxBanner from "./components/ParallaxBanner/ParallaxBanner";
-import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
@@ -27,7 +24,9 @@ export default function Home() {
         <div className=" w-2/5  ">
           <div className=" h-full flex justify-center">
             <div className="flex flex-col justify-center items-start  h-full ">
-              <div className="text-2xl mb-3 text-yellow-400 lg:block">★★★★★</div>
+              <div className="text-2xl mb-3 text-yellow-400 lg:block">
+                ★★★★★
+              </div>
               <div className="text-slate-600 text-4xl font-medium  ">
                 1,000+
               </div>
