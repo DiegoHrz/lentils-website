@@ -153,7 +153,7 @@ const Contacto = () => {
       </div>
       <div className="">
         <div className=" text-black">
-          <div className="">¿ Tienes dudas o preguntas ?</div>
+          <div className="">¿Tienes dudas o preguntas?</div>
           <div className="text-black">
             Puedes llamarnos a los siguientes número telefónicos (+51) 1 323
             8817 de nuestra tienda principal en lima o envíanos un email a
