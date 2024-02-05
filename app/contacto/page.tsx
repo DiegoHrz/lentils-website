@@ -11,7 +11,7 @@ const Contacto = () => {
         <div className="bg-white w-full text-yellow-900 flex justify-center m-6 italic font-normal text-base mb-10">
           Datos de contacto Importaciones Dionys Representado por Intercompany &
           Sr de Huánca Disponibles para consultas, compras y solicitudes de
-          cotizaciones
+          cotizaciones.
         </div>
       </div>
 
