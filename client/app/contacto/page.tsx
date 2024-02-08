@@ -1,3 +1,5 @@
+import { useForm } from "react-hook-form";
+
 const Contacto = () => {
   return (
     <div className="bg-white">
