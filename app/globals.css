@@ -41,3 +41,7 @@ body {
 .animate-pulse {
   animation: pulse 3s ease-in-out infinite;
 }
+
+.blurry {
+  filter: blur(2px);
+}

@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Marca */}
 
-      <div className="w-screen md:h-[40vh] bg-zinc-100  flex flex-col md:flex-row gap-6  md:gap-0 z-50 border-red-700">
+      <div className="w-screen md:h-[40vh] bg-zinc-100  flex flex-col md:flex-row gap-6  md:gap-0 py-12 lg:py-0">
         <div className="w-full  md:w-2/5 flex justify-center items-center">
           <div className=" h-full flex justify-center w-3/5">
             <div className="flex flex-col justify-center items-center md:items-start  h-full ">
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-screen md:w-3/5 flex justify-center items-center pb-5 lg:pb-0">
+        <div className="w-screen md:w-3/5 flex justify-center items-center ">
           <div className="w-full flex flex-col justify-center items-center h-full gap-4 md:gap-0">
             <div className="flex justify-center items-center mb-2 w-full ">
               <div className="w-11/12 text-yellow-900 text-lg font-serif italic text-center ">
@@ -55,27 +55,27 @@ export default function Home() {
 
       {/* Calidad */}
       <div
-        style={{ height: "66vh", backgroundImage: 'url("/banner-2.jpeg")' }}
-        className="w-screen bg-cover bg-center flex flex-col"
+        style={{ backgroundImage: 'url("/banner-2.jpeg")' }}
+        className="w-screen bg-cover bg-center flex flex-col md:h-[66vh] py-12 lg:py-0"
       >
-        <div className="flex justify-center items-center h-full">
-          <div className="flex-col justify-center items-center">
-            <div className="w-full text-center text-yellow-900 text-4xl mb-12">
+        <div className="flex md:flex-row justify-center items-center h-full">
+          <div className="flex flex-col justify-center items-center">
+            <div className="w-full text-center text-yellow-900 text-3xl font-semibold md:font-normal md:text-4xl mb-12">
               Calidad de Nuestras Menestras
             </div>
-            <div className="flex justify-center gap-14 ">
+            <div className="flex flex-col md:flex-row justify-center gap-14 ">
               {/* Calidad - Calidad Premium  */}
-              <div className="w-1/4 ">
+              <div className="md:w-1/4 flex flex-col justify-center items-center md:block ">
                 <div className="flex justify-center h-1/3  mb-3">
-                  <div className="flex justify-center h-full w-1/2  object-cover">
+                  <div className="flex justify-center h-full w-1/4 md:w-1/2  object-cover">
                     <img src="/supply-chain.png" alt="" />
                   </div>
                 </div>
 
-                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="w-5/6 md:w-full text-yellow-900 border rounded-lg  bg-slate-100 bg-opacity-50 md:bg-opacity-40">
                   <div className="flex flex-col justify-center items-center text-center font-medium">
                     {" "}
-                    <div className="italic font-medium text-2xl ">
+                    <div className="italic font-medium text-2xl text-amber-950 md:text-amber-900">
                       Calidad Premium:
                     </div>
                     <div>
@@ -87,19 +87,19 @@ export default function Home() {
               </div>
 
               {/* Calidad - Origen Confiable  */}
-              <div className="w-1/4 ">
+              <div className="md:w-1/4 flex flex-col justify-center items-center md:block ">
                 <div className="flex justify-center h-1/3  mb-3">
-                  <div className="flex justify-center h-full w-1/2  object-cover">
+                  <div className="flex justify-center h-full w-1/4 md:w-1/2 object-cover">
                     <img src="/planting.png" alt="" />
                   </div>
                 </div>
 
-                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="w-5/6 md:w-full text-yellow-900 border rounded-lg  bg-slate-100 bg-opacity-50 md:bg-opacity-40">
                   <div className="flex flex-col justify-center items-center text-center font-medium">
-                    <div className="italic font-medium text-2xl ">
+                    <div className="italic font-medium text-2xl text-amber-950 md:text-amber-900">
                       Origen Confiable:
                     </div>
-                    <div>
+                    <div className="pb-0 lg:pb-6 ">
                       Resalta la autenticidad y origen confiable de tus
                       productos para generar confianza.
                     </div>
@@ -108,19 +108,19 @@ export default function Home() {
               </div>
 
               {/* Calidad - Atractivo para minoristas  */}
-              <div className="w-1/4 ">
+              <div className="md:w-1/4 flex flex-col justify-center items-center md:block ">
                 <div className="flex justify-center h-1/3  mb-3">
-                  <div className="flex justify-center h-full w-1/2  object-cover">
+                  <div className="flex justify-center h-full w-1/4 md:w-1/2  object-cover">
                     <img src="/value-chain.png" alt="" />
                   </div>
                 </div>
 
-                <div className="w-full h-fit text-yellow-900 border rounded bg-slate-100 bg-opacity-40">
+                <div className="w-5/6 md:w-full  border rounded-lg bg-slate-100 bg-opacity-50 md:bg-opacity-40">
                   <div className="flex flex-col justify-center items-center text-center font-medium">
-                    <div className="italic font-medium text-2xl ">
+                    <div className="italic font-medium text-2xl text-amber-950 md:text-amber-900">
                       Atractivas para Minoristas:
                     </div>
-                    <div>
+                    <div className="text-yellow-900">
                       Menciona características atractivas, como empaque
                       llamativo y versatilidad en la cocina.
                     </div>
