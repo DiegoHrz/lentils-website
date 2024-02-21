@@ -2,12 +2,18 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import menuHamburguesaBlanco from "../../public/menu-hamburguesa-blanco.svg";
+import menuHamburguesaMarron from "../../public/menu-hamburguesa-brown.svg";
 
 const Navbar: React.FC = () => {
   const path: string = usePathname();
 
   // State para el scroll
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  //State para el menuHamburguesa para abrirlo cuando se le da clic
+  const [menuOpenned, setMenuOpenned] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,19 +36,22 @@ const Navbar: React.FC = () => {
   const fixedHomePage: string = homepage ? "fixed" : isScrolled ? "fixed" : "";
 
   const navbarStyle: string = isScrolled
-    ? " bg-white text-brown text-amber-800"
-    : "bg-transparent bg-opacity-95 hover:bg-white hover:text-brown hover:text-amber-800";
+    ? " bg-white text-amber-800"
+    : "bg-transparent text-white bg-opacity-95 hover:bg-white hover:text-brown hover:text-amber-800";
 
   const topContainerStyle: React.CSSProperties = {
     marginTop: isScrolled ? "500px" : "0", // Ajusta según sea necesario
   };
 
-
+  //funcion para q al darle clic al icono de menu hamburguesa se vuelva en true y este se abra
+  const handlerMenu = () => {
+    setMenuOpenned(true);
+  };
 
   return (
     <div>
       <div className={`${fixedHomePage} z-50 `}>
-        <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2 ">
+        <div className="flex justify-center items-center bg-yellow-900 w-screen font-light text-xs p-2 text-white">
           Envios a toda Latinoamerica , Canada y USA.
         </div>
         <div
@@ -58,7 +67,8 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <div className=" m-0">
-            <ul className="flex  mr-3 ">
+            {/* HIDDEN PARA QUE EL MENU NO SE VEA Y LG:FLEX PARA Q SE VEA FLEX EN DISPOSITIVOS LARGOS */}
+            <ul className="hidden lg:flex  lg:mr-3 ">
               <Link
                 href="/"
                 className="group rounded-lg border border-transparent transition-colors  hover:underline mr-20"
@@ -101,9 +111,25 @@ const Navbar: React.FC = () => {
               </Link>
             </ul>
           </div>
+
+          <div className="lg:hidden cursor-pointer" onClick={handlerMenu}>
+            {isScrolled ? (
+              <Image
+                src={menuHamburguesaMarron}
+                alt="Menu Button"
+                className="lg:hidden cursor-pointer"
+              />
+            ) : (
+              <Image
+                src={menuHamburguesaBlanco}
+                alt="Menu Button"
+                className="lg:hidden cursor-pointer"
+              />
+            )}
+          </div>
         </div>
       </div>
-        <div style={{ height: isScrolled ? "103px" : "0" }}></div>
+      <div style={{ height: isScrolled ? "103px" : "0" }}></div>
     </div>
   );
 };

@@ -37,7 +37,7 @@ const ParallaxBannerWithText = () => {
             {" "}
             Lentejas Sol del Norte
           </div>
-          <div className="m-6 font-serif text-2xl">
+          <div className="m-6 font-serif text-xl lg:text-2xl">
             La Calidad perfecta de Lentejas que toda familia necesita.
           </div>
           <div className="m-6 italic font-normal text-base mb-10">

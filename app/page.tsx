@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ParallaxBannerWithText from "./components/ParallaxBanner/ParallaxBannerWithText";
+import ParallaxBannerWithText from "../components/ParallaxBanner/ParallaxBannerWithText";
 
 export default function Home() {
   // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Marca */}
 
-      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex">
+      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex flex-col md:flex-row">
         <div className=" w-2/5  ">
           <div className=" h-full flex justify-center">
             <div className="flex flex-col justify-center items-start  h-full ">
