@@ -20,13 +20,11 @@ export default function Home() {
 
       {/* Marca */}
 
-      <div style={{ height: "40vh" }} className="w-screen bg-zinc-100  flex flex-col md:flex-row">
-        <div className=" w-2/5  ">
-          <div className=" h-full flex justify-center">
-            <div className="flex flex-col justify-center items-start  h-full ">
-              <div className="text-2xl mb-3 text-yellow-400 lg:block">
-                ★★★★★
-              </div>
+      <div className="w-screen md:h-[40vh] bg-zinc-100  flex flex-col md:flex-row gap-6  md:gap-0 z-50 border-red-700">
+        <div className="w-full  md:w-2/5 flex justify-center items-center">
+          <div className=" h-full flex justify-center w-3/5">
+            <div className="flex flex-col justify-center items-center md:items-start  h-full ">
+              <div className="text-2xl mb-3 text-yellow-400 ">★★★★★</div>
               <div className="text-slate-600 text-4xl font-medium  ">
                 1,000+
               </div>
@@ -36,20 +34,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-3/5 flex justify-center items-center">
-          <div className=" flex flex-col justify-center items-center h-full m-2 ">
-            <div className="flex justify-center items-center mb-2">
-              <h1 className="text-yellow-900 text-lg font-serif italic">
+        <div className="w-screen md:w-3/5 flex justify-center items-center pb-5 lg:pb-0">
+          <div className="w-full flex flex-col justify-center items-center h-full gap-4 md:gap-0">
+            <div className="flex justify-center items-center mb-2 w-full ">
+              <div className="w-11/12 text-yellow-900 text-lg font-serif italic text-center ">
                 {" "}
                 El Mejor Distribuidor Mayoristas de Menestras en el Perú
-              </h1>
+              </div>
             </div>
-            <div className="flex justify-center items-center">
-              <h2 className="text-neutral-500 text-lg  text-center">
+            <div className="flex justify-center items-center w-full">
+              <div className="text-neutral-500 text-md md:text-lg  text-center w-5/6 md:w-full">
                 ¡Bienvenido a Lentejas Sol del Norte! Tu proveedor de confianza
                 para las lentejas más frescas y sabrosas. Descubre la diferencia
                 con Sol del Norte.
-              </h2>
+              </div>
             </div>
           </div>
         </div>
