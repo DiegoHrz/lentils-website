@@ -15,6 +15,7 @@ const Navbar: React.FC = () => {
   //State para el menuHamburguesa para abrirlo cuando se le da clic
   const [menuOpenned, setMenuOpenned] = useState<boolean>(false);
 
+  //useEffect para que cada vez que se scrollee el isScrolled sea true
   useEffect(() => {
     const handleScroll = () => {
       //se obtiene la posición de scroll vertical
@@ -31,6 +32,19 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  
+  //useEffect para que se de el reload de frente a la parte superior de la pantalla
+  useEffect(() => {
+    const handleReload = () => window.scrollTo(0, 0);
+
+    // Añade el manejador de eventos para antes de la recarga de la página
+    window.addEventListener("beforeunload", handleReload);
+
+    // Limpia el manejador de eventos al desmontar el componente
+    return () => window.removeEventListener("beforeunload", handleReload);
+  }, []);
+
+  
   const homepage: boolean = path === "/";
 
   const fixedHomePage: string = homepage ? "fixed" : isScrolled ? "fixed" : "";
