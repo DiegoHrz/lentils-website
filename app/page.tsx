@@ -133,11 +133,8 @@ export default function Home() {
       </div>
 
       {/* Cotizacion */}
-      <div
-        style={{ height: "66.6666vh" }}
-        className="w-screen bg-gray-50 flex "
-      >
-        <div className="flex w-2/6 h-5/6 justify-center items-center   ">
+      <div className="w-screen bg-gray-50 flex md:h-[66.6666vh] ">
+        <div className="flex w-2/6 h-5/6 justify-center items-center">
           <div className="flex justify-center  overflow-hidden items-center">
             <img src="/credit-card.png" alt="" className="h-1/2" />
           </div>
@@ -217,7 +214,7 @@ export default function Home() {
       </div>
 
       {/* GIF DE AGRICULTURA */}
-      <div className="relative  w-screen" style={{ height: "66.6666vh" }}>
+      <div className="relative  w-screen h-[66.666vh]">
         {/* Imagen de fondo */}
         <div className="object-cover h-full w-full">
           <img
@@ -228,38 +225,61 @@ export default function Home() {
         </div>
 
         {/* Contenido encima de la imagen */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-          <h1 className="text-4xl font-bold">Lentejas Sol del Norte</h1>
-          <p className="text-lg">Calidad hasta en los pequeños detalles</p>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white ">
+          <div className="text-4xl font-bold pb-6 md:pb-0 -mx-6 md:mx-0">
+            Lentejas Sol del Norte
+          </div>
+          <div className="text-md md:text-lg -px md:px-0 -mx-14 md:mx-0">
+            Calidad hasta en los pequeños detalles
+          </div>
         </div>
       </div>
 
       {/* Nutricion */}
-      <div className="w-screen bg-white flex  " style={{ height: "66.6666vh" }}>
-        <div className="text-gray-700 w-1/2  flex justify-center items-center">
-          <div className="w-3/4 ">
-            <h1 className="text-yellow-900 text-5xl font-medium ">Nutricion</h1>
-            <p className="pt-3 text-xl font-normal text-neutral-500 ">
+      <div className="w-screen bg-white flex flex-col md:flex-row md:h-[66.66vh] py-10 md:py-0 ">
+        <div className="text-gray-700 w-screen md:w-1/2  flex flex-col md:flex-row justify-center items-center ">
+          <div className="md:w-3/4 text-center md:text-start">
+            <div className="text-yellow-900 text-4xl md:text-5xl font-medium pb-5 md:pb-0">
+              Nutricion
+            </div>
+            <p className="pt-3 text-base md:text-xl font-normal text-neutral-500 px-10 md:px-0 pb-8 md:pb-0">
               Descubre los beneficios nutricionales de nuestras lentejas: ricas
               en proteínas, fibra y nutrientes esenciales. ¡Bienestar natural
               con Sol del Norte!
             </p>
             <br />
+            <div className="hidden md:block">
+              <p className="  italic">Conoce como prepararlas:</p>
+              <p>
+                <Link
+                  href="/recetas"
+                  className="text-sky-600 cursor-pointer hover:underline"
+                >
+                  Recetas y Cocina ➤
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className=" flex flex-col md:flex-row justify-center items-center md:w-1/2 pb-8 md:pb-0">
+          <div className="  overflow-hidden w-[85vw] md:w-4/6 h-full flex justify-center items-center ">
+            <img
+              src="./lentils-benefits.png"
+              className="pb-14 md:pb-0"
+              alt=""
+            />
+          </div>
+          <div className="flex gap-4 md:hidden">
             <p className="  italic">Conoce como prepararlas:</p>
             <p>
               <Link
                 href="/recetas"
-                className="text-sky-600 cursor-pointer hover:underline"
+                className="text-sky-600 cursor-pointer underline "
               >
-                Recetas y Cocina ➤
+                Recetas y Cocina
               </Link>
             </p>
-          </div>
-        </div>
-
-        <div className=" flex justify-center w-1/2 ">
-          <div className="  overflow-hidden  w-4/6 h-full flex justify-center items-center ">
-            <img src="./lentils-benefits.png" className="  " alt="" />
           </div>
         </div>
       </div>
