@@ -134,30 +134,41 @@ export default function Home() {
 
       {/* Cotizacion */}
       <div className="w-screen bg-gray-50 flex md:h-[66.6666vh] ">
-        <div className="flex w-2/6 h-5/6 justify-center items-center">
+        <div className="flex md:w-2/6 md:h-5/6 justify-center items-center">
           <div className="flex justify-center  overflow-hidden items-center">
-            <img src="/credit-card.png" alt="" className="h-1/2" />
+            <img
+              src="/credit-card.png"
+              alt=""
+              className="h-1/2 hidden md:block"
+            />
           </div>
         </div>
 
-        <div className="w-4/6 h-5/6 flex justify-center items-center">
-          <div className=" flex flex-col justify-center items-center text-center w-4/5 ">
-            <div className="flex justify-center w-fit h-fit items-center">
-              <h2 className="text-yellow-900 text-4xl font-medium  flex justify-center">
+        <div className="md:w-4/6 h-5/6 flex justify-center items-center py-16 md:py-0">
+          <div className=" flex flex-col justify-center items-center text-center w-4/5  ">
+            <div className="flex justify-center items-center pb-10 md:pb-0">
+              <h2 className="text-yellow-900 text-4xl font-medium  flex justify-center w-screen">
                 Solicita tu cotizacion
               </h2>
             </div>
-            <div className="text-neutral-500 text-xl pt-3">
+            <div className="flex justify-center  overflow-hidden items-center">
+              <img
+                src="/credit-card.png"
+                alt=""
+                className="h-1/2 w-11/12 md:hidden mb-10 md:m-0"
+              />
+            </div>
+            <div className="text-neutral-500 text-base md:text-xl pt-3">
               <p>
                 ¡Solicita tu cotización hoy! Descubre precios competitivos para
                 las lentejas de Sol del Norte. Completa el formulario y conoce
                 cómo ser tu proveedor de confianza.
               </p>
             </div>
-            <div className="flex justify-between items-center   w-full">
+            <div className="flex justify-between items-center  w-screen md:w-fit">
               <form action="" className="text-gray-900 pt-16  w-full">
-                <div className="flex justify-around  w-full ">
-                  <div className=" flex flex-col">
+                <div className="flex flex-col md:flex-row justify-around items-center   ">
+                  <div className=" flex flex-col w-4/5 md:w-fit">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Nombre
                     </label>
@@ -168,7 +179,7 @@ export default function Home() {
                       className="border-2 rounded-lg h-8 focus:border-sky-600"
                     />
                   </div>
-                  <div className="  flex flex-col">
+                  <div className="  flex flex-col w-4/5 md:w-fit">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Empresa
                     </label>
@@ -179,7 +190,7 @@ export default function Home() {
                       className="border-2 rounded-lg h-8"
                     />
                   </div>
-                  <div className="  flex flex-col">
+                  <div className="  flex flex-col w-4/5 md:w-fit">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Correo
                     </label>
@@ -190,7 +201,7 @@ export default function Home() {
                       className="border-2 rounded-lg h-8"
                     />
                   </div>
-                  <div className="  flex flex-col">
+                  <div className="  flex flex-col w-4/5 md:w-fit">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Toneladas
                     </label>
@@ -202,8 +213,8 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className=" flex justify-center items-center text-center">
-                  <button className="w-full  border-2 text-sky-600 border-sky-600 mt-6 text-lg rounded-lg font-medium hover:bg-sky-600 hover:text-white">
+                <div className=" flex justify-center items-center text-center w-screen md:w-full">
+                  <button className="w-4/5 md:w-full  border-2 text-sky-600 border-sky-600 mt-6 text-lg rounded-lg font-medium hover:bg-sky-600 hover:text-white">
                     Enviar
                   </button>
                 </div>
@@ -271,7 +282,7 @@ export default function Home() {
             />
           </div>
           <div className="flex gap-4 md:hidden">
-            <p className="  italic">Conoce como prepararlas:</p>
+            <p className="text-black  italic">Conoce como prepararlas:</p>
             <p>
               <Link
                 href="/recetas"
