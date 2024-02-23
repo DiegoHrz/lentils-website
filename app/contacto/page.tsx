@@ -7,10 +7,12 @@ const Contacto = () => {
         <div className="text-yellow-900 text-5xl font-medium mt-14 ">
           <p>Contactanos</p>
         </div>
-        <div className="m-6 font-serif text-xl text-neutral-500">
-          Encantados de contactar contigo en todo momento
+        <div className="m-6 w-screen font-serif text-md md:text-xl text-neutral-500  md:block flex justify-center items-center text-center">
+          <div className="w-4/5 md:w-screen flex justify-center items-center ">
+            Encantados de contactar contigo en todo momento
+          </div>
         </div>
-        <div className="bg-white w-full text-yellow-900 flex justify-center m-6 italic font-normal text-base mb-10">
+        <div className="bg-white w-4/5 md:w-full text-center text-yellow-900 flex justify-center m-6 italic font-normal text-sm md:text-base mb-10 ">
           Datos de contacto Importaciones Dionys Representado por Intercompany &
           Sr de Huánca Disponibles para consultas, compras y solicitudes de
           cotizaciones.
@@ -35,7 +37,7 @@ const Contacto = () => {
             </p>
           </div> */}
 
-      <div className="flex  rounded-lg mx-14" style={{ height: "100vh" }}>
+      <div className="flex flex-col md:flex-row  rounded-lg mx-14" style={{ height: "100vh" }}>
         <div className="w-4/6 bg-neutral-50  rounded-2xl">
           <div className="  rounded-lg">
             <div className="m-14 ">
@@ -119,7 +121,6 @@ const Contacto = () => {
                 </div>
                 <div className="border   flex justify-center items-center rounded-lg mx-3 bg-white text-black">
                   <input type="submit" value="Enviar" className="" />
-                  
                 </div>
               </form>
             </div>
@@ -137,16 +138,37 @@ const Contacto = () => {
               </div>
               <div className="ml-12 text-black flex flex-col gap-8">
                 <div className="">
-                  <a href="" className="flex justify-start items-center"><div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">☎️</div>  Telefono: (01) 5050505</a>
+                  <a href="" className="flex justify-start items-center">
+                    <div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">
+                      ☎️
+                    </div>{" "}
+                    Telefono: (01) 5050505
+                  </a>
                 </div>
                 <div className=" ">
-                  <a href="" className="flex justify-start items-center"> <div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">✆</div> Whatsapp: +51 974377347</a>
+                  <a href="" className="flex justify-start items-center">
+                    {" "}
+                    <div className="border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">
+                      ✆
+                    </div>{" "}
+                    Whatsapp: +51 974377347
+                  </a>
                 </div>
                 <div className="">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">📍</div>Oficinas: Av Siempreviva 241</a>
+                  <a href="" className="flex justify-start items-center">
+                    <div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">
+                      📍
+                    </div>
+                    Oficinas: Av Siempreviva 241
+                  </a>
                 </div>
                 <div className="">
-                  <a href="" className="flex justify-start items-center"><div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">✉️</div>Correo: tusventasfavoritas@gmail.com</a>
+                  <a href="" className="flex justify-start items-center">
+                    <div className=" border rounded-full w-14 h-14 mr-4 flex justify-center items-center text-xl">
+                      ✉️
+                    </div>
+                    Correo: tusventasfavoritas@gmail.com
+                  </a>
                 </div>
               </div>
             </div>

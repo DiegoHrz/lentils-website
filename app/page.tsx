@@ -133,7 +133,7 @@ export default function Home() {
       </div>
 
       {/* Cotizacion */}
-      <div className="w-screen bg-gray-50 flex md:h-[66.6666vh] ">
+      <div className="w-screen bg-gray-50 flex md:h-[66.6666vh]">
         <div className="flex md:w-2/6 md:h-5/6 justify-center items-center">
           <div className="flex justify-center  overflow-hidden items-center">
             <img
@@ -144,12 +144,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:w-4/6 h-5/6 flex justify-center items-center py-16 md:py-0">
-          <div className=" flex flex-col justify-center items-center text-center w-4/5  ">
-            <div className="flex justify-center items-center pb-10 md:pb-0">
-              <h2 className="text-yellow-900 text-4xl font-medium  flex justify-center w-screen">
-                Solicita tu cotizacion
-              </h2>
+        <div className="md:w-4/6 h-full flex justify-center items-center py-16 md:py-0 border">
+          <div className="h-5/6 flex flex-col justify-center items-center text-center w-full border ">
+            <div className="text-yellow-900 text-4xl font-medium flex justify-center items-center pb-10 md:pb-0">
+              Solicita tu cotizacion
             </div>
             <div className="flex justify-center  overflow-hidden items-center">
               <img
@@ -158,17 +156,15 @@ export default function Home() {
                 className="h-1/2 w-11/12 md:hidden mb-10 md:m-0"
               />
             </div>
-            <div className="text-neutral-500 text-base md:text-xl pt-3">
-              <p>
-                ¡Solicita tu cotización hoy! Descubre precios competitivos para
-                las lentejas de Sol del Norte. Completa el formulario y conoce
-                cómo ser tu proveedor de confianza.
-              </p>
+            <div className="text-neutral-500 text-base md:text-xl pt-3 w-full">
+              ¡Solicita tu cotización hoy! Descubre precios competitivos para
+              las lentejas de Sol del Norte. Completa el formulario y conoce
+              cómo ser tu proveedor de confianza.
             </div>
-            <div className="flex justify-between items-center  w-screen md:w-fit">
-              <form action="" className="text-gray-900 pt-16  w-full">
-                <div className="flex flex-col md:flex-row justify-around items-center   ">
-                  <div className=" flex flex-col w-4/5 md:w-fit">
+            <div className="flex justify-between items-center  w-screen md:w-11/12">
+              <form action="" className="text-gray-900 pt-16  w-full ">
+                <div className="flex flex-col md:flex-row justify-around items-center md:gap-2 border">
+                  <div className=" flex flex-col w-4/5 md:w-full">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Nombre
                     </label>
@@ -176,10 +172,10 @@ export default function Home() {
                       type="text"
                       name="input-text"
                       id="input-nombre"
-                      className="border-2 rounded-lg h-8 focus:border-sky-600"
+                      className="border-2 rounded-lg h-8 focus:border-sky-600 w-full"
                     />
                   </div>
-                  <div className="  flex flex-col w-4/5 md:w-fit">
+                  <div className="  flex flex-col w-4/5 md:w-full">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Empresa
                     </label>
@@ -187,10 +183,10 @@ export default function Home() {
                       type="text"
                       name=""
                       id=""
-                      className="border-2 rounded-lg h-8"
+                      className="border-2 rounded-lg h-8 w-full"
                     />
                   </div>
-                  <div className="  flex flex-col w-4/5 md:w-fit">
+                  <div className="  flex flex-col w-4/5 md:w-full">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Correo
                     </label>
@@ -198,10 +194,10 @@ export default function Home() {
                       type="email"
                       name=""
                       id=""
-                      className="border-2 rounded-lg h-8"
+                      className="border-2 rounded-lg h-8 w-full"
                     />
                   </div>
-                  <div className="  flex flex-col w-4/5 md:w-fit">
+                  <div className="  flex flex-col w-4/5 md:w-full">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Toneladas
                     </label>
@@ -209,7 +205,7 @@ export default function Home() {
                       type="text"
                       name=""
                       id=""
-                      className="border-2 rounded-lg h-8"
+                      className="border-2 rounded-lg h-8 w-full"
                     />
                   </div>
                 </div>
