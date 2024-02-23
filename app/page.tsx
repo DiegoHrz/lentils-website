@@ -144,8 +144,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:w-4/6 h-full flex justify-center items-center py-16 md:py-0 border">
-          <div className="h-5/6 flex flex-col justify-center items-center text-center w-full border ">
+        <div className="md:w-4/6 h-full flex justify-center items-center py-16 md:py-0 ">
+          <div className="h-5/6 flex flex-col justify-center items-center text-center w-full  ">
             <div className="text-yellow-900 text-4xl font-medium flex justify-center items-center pb-10 md:pb-0">
               Solicita tu cotizacion
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-center  w-screen md:w-11/12">
               <form action="" className="text-gray-900 pt-16  w-full ">
-                <div className="flex flex-col md:flex-row justify-around items-center md:gap-2 border">
+                <div className="flex flex-col md:flex-row justify-around items-center md:gap-2 ">
                   <div className=" flex flex-col w-4/5 md:w-full">
                     <label htmlFor="" className="text-xl mb-2 font-medium">
                       Nombre

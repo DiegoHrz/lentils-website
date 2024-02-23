@@ -37,10 +37,10 @@ const Contacto = () => {
             </p>
           </div> */}
 
-      <div className="flex flex-col md:flex-row  rounded-lg mx-14" style={{ height: "100vh" }}>
-        <div className="w-4/6 bg-neutral-50  rounded-2xl">
-          <div className="  rounded-lg">
-            <div className="m-14 ">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch  rounded-lg lg:mx-14 md:h-[100vh]">
+        <div className="w-11/12 lg:w-4/6 bg-neutral-50  rounded-2xl">
+          <div className="  rounded-lg w-full">
+            <div className="lg:m-14 ">
               <form action="" className="">
                 <div className="flex flex-col border mx-3 my-5  rounded-lg bg-white text-black">
                   <label htmlFor="" className="m-3 text-sm">
@@ -55,8 +55,8 @@ const Contacto = () => {
                     placeholder="Ingresa tu Nombre"
                   />
                 </div>
-                <div className="flex">
-                  <div className="flex flex-col border mx-3 my-5 rounded-lg w-1/2 bg-white text-black">
+                <div className="flex gap-1 md:gap-0">
+                  <div className="flex flex-col border ml-3 lg:mx-3 my-5 rounded-lg w-3/5 lg:w-2/3 bg-white text-black">
                     <label htmlFor="" className="m-3 text-sm ">
                       Correo Electronico
                     </label>
@@ -68,7 +68,7 @@ const Contacto = () => {
                       className=" m-3"
                     />
                   </div>
-                  <div className="flex flex-col border mx-3 my-5 rounded-lg w-1/2 bg-white text-black">
+                  <div className="flex flex-col border mx-3 my-5 rounded-lg w-1/3 lg:w-1/3 bg-white text-black">
                     <label htmlFor="" className="m-3 text-sm ">
                       Celular
                     </label>
@@ -76,7 +76,7 @@ const Contacto = () => {
                       type="text"
                       name=""
                       id=""
-                      placeholder="Ingresa tu Numero"
+                      placeholder="Tu Numero"
                       className=" m-3"
                     />
                   </div>
