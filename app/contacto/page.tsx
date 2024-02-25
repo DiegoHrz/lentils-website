@@ -120,7 +120,11 @@ const Contacto = () => {
                   </div>
                 </div>
                 <div className="border   flex justify-center items-center rounded-lg mx-3 bg-white text-black">
-                  <input type="submit" value="Enviar" className="" />
+                  <input
+                    type="submit"
+                    value="Enviar"
+                    className="border-2 w-full text-sky-600 border-sky-600 text-lg rounded-lg font-medium hover:bg-sky-600 hover:text-white"
+                  />
                 </div>
               </form>
             </div>
@@ -175,10 +179,12 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className=" text-black">
-          <div className="">¿Tienes dudas o preguntas?</div>
-          <div className="text-black">
+      <div className="w-full h-[25vh] border-red-500 border-2">
+        <div className=" text-black flex flex-col h-full">
+          <div className="h-2/5 flex justify-center items-center">
+            ¿Tienes más dudas o preguntas?
+          </div>
+          <div className="text-black h-3/5">
             Puedes llamarnos a los siguientes número telefónicos (+51) 1 323
             8817 de nuestra tienda principal en lima o envíanos un email a
             ventas@grupodionys.com.pe donde también podrás solicitar

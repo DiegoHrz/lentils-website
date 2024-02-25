@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div>
-      <footer className="bg-white -mt-24">
-        <div className="mx-auto w-full max-w-screen-xl pt-24">
+    <div className="">
+      <footer className="bg-white border-2">
+        <div className="mx-auto w-full max-w-screen-xl ">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 ">
             <div className="group pb-4 h-3/4 rounded-lg border border-transparent transition-colors hover:border-yellow-900">
               <div className="pt-7 pb-24">
