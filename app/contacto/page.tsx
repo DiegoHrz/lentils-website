@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 
 const Contacto = () => {
+  useForm
   return (
     <div className="bg-white">
       <div className="flex flex-col justify-center items-center">
