@@ -1,7 +1,4 @@
 // components/Carousel.tsx
-
-import React from "react";
-
 const Carousel: React.FC = () => {
   return (
     <div
