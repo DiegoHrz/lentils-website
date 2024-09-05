@@ -1,4 +1,5 @@
 // components/Carousel.tsx
+//carousel
 const Carousel: React.FC = () => {
   return (
     <div
