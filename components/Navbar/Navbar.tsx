@@ -32,7 +32,6 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  
   //useEffect para que se de el reload de frente a la parte superior de la pantalla
   useEffect(() => {
     const handleReload = () => window.scrollTo(0, 0);
@@ -44,7 +43,6 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("beforeunload", handleReload);
   }, []);
 
-  
   const homepage: boolean = path === "/";
 
   const fixedHomePage: string = homepage ? "fixed" : isScrolled ? "fixed" : "";
