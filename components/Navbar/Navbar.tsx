@@ -9,7 +9,7 @@ import menuHamburguesaMarron from "../../public/menu-hamburguesa-brown.svg";
 const Navbar: React.FC = () => {
   const path: string = usePathname();
 
-  // State para el scroll
+
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   //State para el menuHamburguesa para abrirlo cuando se le da clic
