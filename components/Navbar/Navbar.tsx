@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
-  //State para el menuHamburguesa para abrirlo cuando se le da clic
+
   const [menuOpenned, setMenuOpenned] = useState<boolean>(false);
 
   //useEffect para que cada vez que se scrollee el isScrolled sea true
