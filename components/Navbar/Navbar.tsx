@@ -8,8 +8,6 @@ import menuHamburguesaMarron from "../../public/menu-hamburguesa-brown.svg";
 
 const Navbar: React.FC = () => {
   const path: string = usePathname();
-
-
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
 
