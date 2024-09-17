@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleReload = () => window.scrollTo(0, 0);
 
+    
     // Añade el manejador de eventos para antes de la recarga de la página
     window.addEventListener("beforeunload", handleReload);
 
