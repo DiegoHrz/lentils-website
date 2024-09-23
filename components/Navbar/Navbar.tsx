@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
 
   const [menuOpenned, setMenuOpenned] = useState<boolean>(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
       //se obtiene la posición de scroll vertical
